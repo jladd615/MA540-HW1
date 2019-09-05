@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+%\usepackage{amssymb,amsmath,amsthm}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{upgreek}
+\usepackage{pstricks,pst-plot}
+
+\input xy
+\xyoption{all}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{-0in}
+\setlength{\evensidemargin}{-0in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-0.5in}
+\newcounter{Pagenum}
+\addtocounter{Pagenum}{1}
+\usepackage{fancyhdr}
+
+                 
+\usepackage[hmargin=1in,vmargin=1in]{geometry}
+\usepackage[psamsfonts]{amsfonts}
+\usepackage{amsmath, amsthm, amssymb, mathrsfs, paralist,tabularx,supertabular, verbatim, amsthm, manfnt}
+\usepackage[all]{xy}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\Z}{{\mathbb Z}}
+\newcommand{\Q}{{\mathbb Q}}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\A}{{\mathbb A}}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\Zp}{\Z_{(p)}}
+\newcommand{\F}{{\mathbb F}}
+\newcommand{\normal}{\trianglelefteq}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{collectbox}
+\usetikzlibrary{shapes.geometric, arrows,positioning}
+\usepackage{adjustbox}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{epstopdf}
+\usepackage{inputenc}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,  decorations.pathreplacing,decorations.pathmorphing,shapes,  matrix,shapes.symbols}
+
+\tikzset{
+ decision/.style={diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, inner sep=0pt},
+ block/.style={rectangle, draw, 
+    text width=5em, text centered, rounded corners, minimum height=4em},
+ line/.style={draw, -latex'},
+}
+\newcommand{\mybox}{%
+    \collectbox{%
+        \setlength{\fboxsep}{3pt}%
+        \fbox{\BOXCONTENT}%
+    }%
+}
+
+%---------------------------------------------------
+%       Wide margins
+%--------------------------------------------------
+
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parskip=\medskipamount
+
+%-----------------------------------------------------
+%       Standard theoremlike environments.
+%       Stolen directly from AMSLaTeX sample
+%-----------------------------------------------------
+%% \theoremstyle{plain} %% This is the default
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{theorem}[thm]{Theorem}
+\newtheorem{corollary}[thm]{Corollary}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{proposition}[thm]{Proposition}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{conjecture}[thm]{Conjecture}
+\newtheorem{algorithm}[thm]{Algorithm}
+
+
+\theoremstyle{definition}
+\newtheorem{definition}[thm]{Definition}
+
+
+\theoremstyle{remark}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{example}[thm]{Example}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{problem}[thm]{Problem}
+
+\makeatletter
+\def\myitem{%
+   \@ifnextchar[ \@myitem{\@noitemargtrue\@myitem[\@itemlabel]}}
+\def\@myitem[#1]{\item[#1]\mbox{}\\}
+\makeatother
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{HW \#1}
+\author{Jack Ladd}
+
+\maketitle
+
+
+\end{document}
